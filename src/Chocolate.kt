@@ -4,7 +4,7 @@ var prixchocLait = 4.50
 fun main() {
     // Entrée du prénom de la personne
     println("Bonjour, quel est votre prénom?")
-    var name = readLine()!!
+    val name = readLine()!!
     println("Bienvenue dans notre Boutique de Chocolats $name," +
             " voici les deux sortes de Chocolat que nous proposons > ")
 
@@ -14,9 +14,9 @@ fun main() {
 
     // Demander combien de tablettes
     println("Voulez-vous du Chocolat Noir? Si Oui, tapez le nombre de tablettes, Si Non mettez 0")
-    var nbtabNoir = readLine()!!.toInt()
+    val nbtabNoir = readLine()!!.toInt()
     println("Voulez-vous du Chocolat au Lait? Si oui, tapez le nombre de tablettes, Si Non mettez 0")
-    var nbtabLait = readLine()!!.toInt()
+    val nbtabLait = readLine()!!.toInt()
     //Calculer le prix total que le client devra payer
     var totalPrix = nbtabNoir * prixchocNoir + nbtabLait * prixchocLait
 
